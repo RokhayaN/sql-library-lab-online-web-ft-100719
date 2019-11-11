@@ -4,7 +4,8 @@ def select_books_titles_and_years_in_first_series_order_by_year
 end
 
 def select_name_and_motto_of_char_with_longest_motto
-  SELECT characters.name, characters.motto, characters.species FROM characters Where lenght s.author_id
+  SELECT characters.name, characters.motto, characters.species FROM characters Where (LENGTH(motto)
+  WHERE (LENGTH(lemma)-LENGTH(REPLACE(lemma,’ ‘,’’)))
 end
 
 
